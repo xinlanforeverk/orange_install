@@ -4,10 +4,10 @@
 ## 安装lor
 lor项目地址:https://github.com/sumory/lor
 
-git clone https://github.com/sumory/lor
-cd lor
-make install
-make install LOR_HOME=/path/to/lor LORD_BIN=/path/to/lord
+    git clone https://github.com/sumory/lor
+    cd lor
+    make install
+    make install LOR_HOME=/path/to/lor LORD_BIN=/path/to/lord
 
 ## 安装orange
 ### 前置条件：
