@@ -43,7 +43,8 @@
         
 * 3、nginx: [error] init_by_lua error: ./lualib/resty/pl/path.lua:28: pl.path requires LuaFileSystem
 在nginx.conf中，引入lua_package路径：
-       · lua_package_cpath '/usr/local/luarocks/lib/lua/5.1/?.so;/usr/local/luarocks/lib/lua/5.1/socket/?.so;/usr/local/luarocks/lib/lua/5.1/mime/?.so;;'; ·
-       · lua_package_path    './lualib/?.lua;./lualib/resty/?.lua;/usr/local/orange/?.lua;/usr/local/lor/?.lua;/usr/local/luarocks/share/lua/5.1/?.lua;;'; ·
+
+        lua_package_cpath               '/usr/local/luarocks/lib/lua/5.1/?.so;/usr/local/luarocks/lib/lua/5.1/socket/?.so;/usr/local/luarocks/lib/lua/5.1/mime/?.so;;'; 
+       lua_package_path    './lualib/?.lua;./lualib/resty/?.lua;/usr/local/orange/?.lua;/usr/local/lor/?.lua;/usr/local/luarocks/share/lua/5.1/?.lua;;'; 
 
 * 4、make install之后，可以直接sh start.sh运行，不过指定的是当前目录下的配置。个人喜欢指定安装后的目录
